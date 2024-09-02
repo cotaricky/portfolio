@@ -29,7 +29,8 @@ body {
 
 .portfolio img:hover {
   transform: translateY(-5px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .company {
   width: 75px;
@@ -162,7 +163,7 @@ body {
 
 .carousel-container::before,
 .carousel-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 100px; /* Width of the gradient effect, adjustable */
@@ -190,8 +191,6 @@ body {
   }
 }
 
-
 html.sr .load-hidden {
   visibility: hidden;
 }
-
