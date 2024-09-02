@@ -143,3 +143,49 @@ body {
   font-weight: 900;
   font-style: italic;
 }
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slider {
+  display: flex; /* Use Flexbox for layout */
+  gap: 20px; /* Space between logos, adjustable */
+  animation: slidein 30s linear infinite; /* Sliding animation */
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Prevent logos from growing or shrinking */
+  width: calc(100% / 5); /* Adjust width based on number of logos */
+}
+
+.carousel-container::before,
+.carousel-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px; /* Width of the gradient effect, adjustable */
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
