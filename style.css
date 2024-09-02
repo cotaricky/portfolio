@@ -1,0 +1,27 @@
+:root {
+  --text-gray: #999;
+}
+
+body {
+  padding-top: 5rem;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 2rem;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.portfolio img {
+  transition: 200ms;
+}
+
+.portfolio img:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
