@@ -30,3 +30,8 @@ body {
   height: 50vh;
   overflow-y: scroll;
 }
+
+.company {
+  width: 75px;
+  background-size: contain;
+}
